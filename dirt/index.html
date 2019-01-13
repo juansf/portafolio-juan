@@ -10,10 +10,32 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <h3>preueba github probando</h3>
-    <h4>segundo commit agregado</h4>
-    <h1>sigo probando</h1>
+    <header class="header" id="header">
+      <nav> 
+        <div class="nav-wrapper">
+          <div class="container"><a class="brand-logo " href="#">logotipo</a><a class="button-collapse right sidenav-trigger" href="#" data-target="menu-reponsive"><i class="material-icons">menu    </i></a>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Conoceme</a></li>
+              <li><a href="#">Trabajos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Conoceme</a></li>
+              <li><a href="#">Trabajos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentloaded',function(){
+          M.AutoInit();
+      })
+    </script>
   </body>
 </html>
