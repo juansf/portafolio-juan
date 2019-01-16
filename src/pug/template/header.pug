@@ -1,21 +1,24 @@
 header#header.header
-    nav() 
-        div( class="nav-wrapper")
-            .container
-                a(href="#" class="brand-logo ") logotipo
-                a(href="#" data-activates="mobile-demo" data-target="menu-responsive"  class="button-collapse right sidenav-trigger")
-                    i(class="material-icons") menu    
-                ul(id="nav-mobile" class="right hide-on-med-and-down")
-                    li: a(href="#") Inicio
-                    li: a(href="#") Conoceme
-                    li: a(href="#") Trabajos
-                    li: a(href="#") Contacto
-                ul(class="sidenav blue darken-2" id="menu-responsive"  )
-                    li: a(href="#") Inicio
-                    li: a(href="#") Conoceme
-                    li: a(href="#") Trabajos
-                    li: a(href="#") Contacto
-    div(class="container section")
-        .row
-            .col.s12
-                .carousel
+   div(navbar-fixed)
+        nav() 
+            div( class="nav-wrapper")
+                .container
+                    a(href="#" class="brand-logo ") logotipo
+                    a(href="#" data-activates="mobile-demo" data-target="menu-responsive"  class="button-collapse right sidenav-trigger")
+                        i(class="material-icons") menu    
+                    ul(id="nav-mobile" class="right hide-on-med-and-down")
+                        li: a(href="#") Inicio
+                        li: a(href="#") Conoceme
+                        li: a(href="#") Servicios
+                        li: a(href="#") Trabajos
+                        li: a(href="#") Contacto
+                    ul(class="sidenav blue text-white" id="menu-responsive"  )
+                        li: a(href="#") Inicio
+                        li: a(href="#") Conoceme
+                        li: a(href="#") Servicios
+                        li: a(href="#") Trabajos
+                        li: a(href="#") Contacto
+        div(class="container section")
+            .row
+                .col.s12
+                    .carousel
