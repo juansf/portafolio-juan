@@ -8,23 +8,20 @@ $(document).ready(function(){
 //     var instances = M.Carousel.init(elemss);
 // });
 
-window.onload = function () {
-    scrollSpy('#menu')
-}
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+    
 
-window.onload = function () {
-    
-      scrollSpy('#menu', {
-    
-        offset: 0, // in pixels
-    
-        menuActiveTarget: 'nav ul a:hover',
-    
-        sectionClass: '.scrollspy',
-    
-        activeClass: 'active',
-    
-      })
-    
-    }
-    
+$(document).ready(function(){
+  $('.slider').slider();
+  
+  $('.slider').click(function(){
+    $('.slider').slider('next')
+  });
+
+
+
+});
+
+
