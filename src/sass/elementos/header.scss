@@ -10,3 +10,23 @@
     background: none;
     color: yellow
 }
+
+
+.menu_contenedor{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logotipo{
+    display: inline-block;
+    img{
+        height: 100%;
+    }
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    display: inline-block;
+    
+    font-size: 2em;
+}
+

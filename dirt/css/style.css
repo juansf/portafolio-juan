@@ -1,3 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700");
 .header {
   background: url("../imagenes/bg-header.jpeg"); }
+
+.brand-logo {
+  padding-top: 20px; }
+
+.nav ul a:hover {
+  background: none;
+  color: yellow; }
+
+.menu_contenedor {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.logotipo {
+  display: inline-block; }
+  .logotipo img {
+    height: 100%; }
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  display: inline-block;
+  font-size: 2em; }
