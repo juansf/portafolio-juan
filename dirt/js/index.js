@@ -14,7 +14,11 @@ $(document).ready(function(){
     
 
 $(document).ready(function(){
-  $('.slider').slider();
+  $('.slider').slider({
+    indicators	: false,
+    duration : 300,
+    height: 500
+  });
   
   $('.slider').click(function(){
     $('.slider').slider('next')

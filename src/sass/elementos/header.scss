@@ -5,34 +5,38 @@
     position: fixed;
     width: 100%;
     z-index: 5;
+    background-color:rgba($color: #999a9b, $alpha: .2);
 }
 //--fin position fixed--//
 
-// personalizacion de contenido navbar menu//
+// personalizacion de contenido navbar menu principal//
 .table-of-contents a {
-    display: inline-block;
+    display: inline;
     font-weight: 500;
     color: #fff;
     padding-left: 16px;
-    height: 1.5rem;
+    
     line-height: 1.5rem;
     letter-spacing: .4;
     font-family: $titulo;
-   
-    
+    border-bottom: 2px solid transparent;
+    padding: 10px ;
+    transition: all .5s ease-in;
+    text-transform: capitalize;
     
 
 }
 // fin navbar personalizacion
 
+// efecto hover en scrollpy deslizamiento//
 .table-of-contents a:hover{
-    color: #a8a8a8;
+    color: $amarillo;
     padding-left: 15px;
     border-left: none;
     
-    border: 2px solid #fff;
-    padding: 5px ;
-    display: table;
+    border-bottom: 2px solid $amarillo;
+    padding: 10px ;
+    display: inline;
     
 }
 
@@ -65,4 +69,49 @@ nav ul a:hover {
     color:white;
     border-bottom: 2px solid white;
 
+}
+
+
+// personalizacion slider header//@at-root
+.slider .slides{
+    height: 100%;
+}
+
+.slider1,.slider2,.slider3{
+    h3{
+
+        font-family: $titulo;
+        font-weight: 300;
+        font-size: em(50px);
+        text-transform: capitalize;
+    }
+    p{
+        font-size: em(18px);
+        color: $blanco;
+    }
+  
+}
+.slider1{
+    h3{
+        span{
+            color: $amarillo;
+            font-weight: bold;
+        }
+    }
+}
+.slider2{
+    h3{
+        span{
+            color: $carnesi;
+            font-weight: bold;
+        }
+    }
+}
+.slider3{
+    h3{
+        span{
+            color: $opaco;
+            font-weight: bold;
+        }
+    }
 }

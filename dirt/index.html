@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>Portafolio Juan Simanca</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -12,47 +12,62 @@
   <body>
     <header class="header" id="header">
       <div>
-        <nav class="fixeb-top transparent">
+        <nav class="fixeb-top">
           <div class="container">
-            <div class="nav-wrapper"><a class="brand-logo" href="#!"> <img src="imagenes/logotipo.svg" alt="" srcset=""/></a><a class="sidenav-trigger right" href="#" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+            <div class="nav-wrapper"><a class="brand-logo" href="#!">
+                <div class="contenedor-logo"> <img src="imagenes/logotipo.svg" alt="" srcset=""/></div></a><a class="sidenav-trigger right" href="#" data-target="mobile-demo"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down table-of-contents">
-                <li><a href="#conoceme">Inicio</a></li>
-                <li><a href="#servicios">Inicio</a></li>
-                <li><a href="#trabajos">Inicio</a></li>
-                <li><a href="#contacto">Inicio</a></li>
+                <li><a href="#inicio" title="title">inicio</a></li>
+                <li><a href="#conoceme" title="title">conoceme</a></li>
+                <li><a href="#servicios" title="title">servicios</a></li>
+                <li><a href="#trabajos" title="title">trabajos</a></li>
+                <li><a href="#contacto" title="title">contacto</a></li>
               </ul>
             </div>
           </div>
         </nav>
         <ul class="sidenav " ul="ul" id="mobile-demo">
-          <li><a href="#conoceme">Inicio</a></li>
-          <li><a href="#servicios">Inicio</a></li>
-          <li><a href="#trabajos">Inicio</a></li>
-          <li><a href="#contacto">Inicio</a></li>
+          <li><a href="#inicio" title="title">inicio</a></li>
+          <li><a href="#conoceme" title="title">conoceme</a></li>
+          <li><a href="#servicios" title="title">servicios</a></li>
+          <li><a href="#trabajos" title="title">trabajos</a></li>
+          <li><a href="#contacto" title="title">contacto</a></li>
         </ul>
       </div>
       <div class="contenedor_slider">
         <div class="slider">
           <ul class="slides">
             <li><img src="imagenes/slider-1.jpeg"/>
-              <div class="caption left-align">
-                <h3>diseño grafico</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime reiciendis eos nobis nisi tenetur porro excepturi doloribus blanditiis magnam rerum.</p>
-                <button>boton</button>
+              <div class="caption left-align container">
+                <div class="row">
+                  <div class="col m8 s12 slider1">
+                    <h3>diseño <span>grafico</span></h3>
+                    <p>Atraiga la atención de sus clientes con diseños realizados por un profesional con experiencia.</p><a class="waves-effect waves-light  btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                  </div>
+                  <div class="col s4 hide-on-small-only">   </div>
+                </div>
               </div>
             </li>
             <li><img src="imagenes/slider-2.jpeg"/>
-              <div class="caption left-align">
-                <h3>diseño grafico</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime reiciendis eos nobis nisi tenetur porro excepturi doloribus blanditiis magnam rerum.        </p>
-                <button>boton</button>
+              <div class="caption left-align container">
+                <div class="row">
+                  <div class="col m8 s12 slider2">
+                    <h3>Publicidad <span>Redes Sociales</span></h3>
+                    <p>Dale un impulso a tu próxima campaña en redes sociales añadiendo mensajes y imágenes con llamativos diseños.</p><a class="waves-effect waves-light btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                  </div>
+                  <div class="col s4 hide-on-small-only"> </div>
+                </div>
               </div>
             </li>
             <li><img src="imagenes/slider-3.jpeg"/>
-              <div class="caption left-align">
-                <h3>diseño grafico</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime reiciendis eos nobis nisi tenetur porro excepturi doloribus blanditiis magnam rerum.</p>
-                <button>boton</button>
+              <div class="caption left-align container">
+                <div class="row">
+                  <div class="col m8 s12 slider3">
+                    <h3>diseño <span>Web</span></h3>
+                    <p>Crearé tu web para que posicione bien en Google gracias a un desarrollo muy optimizado y un diseño simple e intuitivo.</p><a class="waves-effect waves-light btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                  </div>
+                  <div class="col s4 hide-on-small-only"> </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -61,9 +76,39 @@
         </div>
       </div>
     </header>
+    <section class="section" id="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s4">
+            <div class="contenedor-foto"></div>
+          </div>
+          <div class="col s8">
+            <div class="contenido-conoceme">
+              <div class="titulares">
+                <h4>Conoceme</h4>
+                <h3>Sobre My</h3>
+              </div>
+              <div class="texto-conoceme">
+                <h3>Soy un Técnico Profesional que cuenta con mas de 5 años de experiencia en mundo del Diseño Grafico.</h3>
+                <p> Mi nombre es Juan pablo simanca, soy diseñador Gráfico del centro sena Colombia, orientado en Branding y gestión en Diseño, con habilidades en desarrollo de marca y diseño web. Actualmente trato de enfocar mi proyectos en dos áreas: Marketing en redes sociales y Diseño Web. Son dos áreas diferentes entre sí, pero que se complementan muy bien en nuestra sociedad global cada vez más digital y competitiva.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <p>Carrera 40a No. 27 - 26<i class="material-icons left">room </i></p>
+                    <p>juansf80@hotmail.com<i class="material-icons left">email     </i></p>
+                  </div>
+                  <div class="col s6"> 
+                    <p>300 434 1113 - 392 2394       <i class="material-icons left">settings_cell</i></p>
+                    <p>30 años<i class="material-icons left">date_range    </i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/simple-scrollspy.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
