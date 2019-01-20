@@ -8,13 +8,48 @@ $blanco: #fff;
 $amarillo : #f1c40f;
 $carnesi: #c0392b;
 $gris:#bdc3c7;
+$gris-oscuro:#2d3436;
 $opaco:#ecf0f1;
+$azul-icon: #3498db;
+$azul-oscuro: #0B055B;
+
 
 // fuentes del la pagina web
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700');
 $titulo:'Raleway', sans-serif;
 $texto: 'Open Sans', sans-serif;
 
+
+// estilos para titulos H3 Y H4
+// estilos para  titulos h4
+.titulo-borde{
+        display: inline-block;
+        background: $azul-icon;
+        color: $blanco;
+        padding: 10px;
+        font-size: em(15px);
+        border-radius: 8px;
+        font-weight: 700;
+}
+// estilos para h3
+.h3titulo{
+    font-family: $titulo;
+        font-size: em(30px);
+        margin-top: em(5px);
+        margin-bottom: em(5px);
+        font-weight: bold;
+        position: relative;
+        color:$azul-oscuro;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 3px;
+            bottom:-10px;
+            left: 0;
+            background: $azul-oscuro;}
+}
+
 // elementos css cada elementos
 @import "elementos/header.scss";
-@import "elementos/header.scss"
+@import "elementos/conoceme.scss"

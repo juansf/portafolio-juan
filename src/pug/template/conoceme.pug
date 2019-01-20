@@ -1,25 +1,34 @@
 section.section#section
     .container
         .row
-            .col.s4
+            .col.m4.s12
                 .contenedor-foto
-            .col.s8
+                    img(src="imagenes/foto.png " class="responsive-img", alt="foto perfil personal")
+                .Herramientas
+                h5.center-align Herramientas
+                    div(class="carousel-herramientas")
+                        each slider in [1,2,3,4,5,6,7,8] 
+                            img(src=`imagenes/slider/slider${slider}.png`, alt="", srcset="")
+                        
+                            
+                        
+            .col.m8.s12
                 .contenido-conoceme
                     .titulares
-                        h4 Conoceme
-                        h3 Sobre My
+                        h4.titulo-borde Conoceme
+                        h3.h3titulo Algo de My
                     .texto-conoceme
                         h3 Soy un Técnico Profesional que cuenta con mas de 5 años de experiencia en mundo del Diseño Grafico.
-                        p  Mi nombre es Juan pablo simanca, soy diseñador Gráfico del centro sena Colombia, orientado en Branding y gestión en Diseño, con habilidades en desarrollo de marca y diseño web. Actualmente trato de enfocar mi proyectos en dos áreas: Marketing en redes sociales y Diseño Web. Son dos áreas diferentes entre sí, pero que se complementan muy bien en nuestra sociedad global cada vez más digital y competitiva.
+                        p.texto  Mi nombre es Juan pablo simanca, soy diseñador Gráfico del centro sena Colombia, orientado en Branding y gestión en Diseño, con habilidades en desarrollo de marca y diseño web. Actualmente trato de enfocar mi proyectos en dos áreas: Marketing en redes sociales y Diseño Web. Son dos áreas diferentes entre sí, pero que se complementan muy bien en nuestra sociedad global cada vez más digital y competitiva.
                          
                         .row
-                            .col.s6
+                            .col.l6.s12
                                 p Carrera 40a No. 27 - 26
                                     i(class="material-icons left") room 
                                 p juansf80@hotmail.com
                                     i(class="material-icons left") email     
 
-                            .col.s6 
+                            .col.l6.s12 
                                 p 300 434 1113 - 392 2394       
                                     i(class="material-icons left") settings_cell
                                 p 30 años

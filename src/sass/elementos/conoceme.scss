@@ -4,9 +4,23 @@
 }
 
 // edicion titulares configuration
-.contenido-conoceme .titulares{
-    h4{
-        background: blue;
-        font-size: em(10px);
+.texto-conoceme{
+    h3{
+        color:$azul-icon;
+        font-size: em(25px);
+        font-family: $titulo;
     }
+    p.texto {
+        font-size: em(18px);
+        color: $gris-oscuro;
+    }
+}
+.section{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.slick-slide{
+    padding: 50px 20px;
 }

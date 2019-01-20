@@ -8,6 +8,7 @@ $(document).ready(function(){
 //     var instances = M.Carousel.init(elemss);
 // });
 
+
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 });
@@ -29,3 +30,13 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  $('.carousel-herramientas').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    arrows:false
+  })
+})

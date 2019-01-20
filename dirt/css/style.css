@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700");
+.titulo-borde {
+  display: inline-block;
+  background: #3498db;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9375em;
+  border-radius: 8px;
+  font-weight: 700; }
+
+.h3titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.875em;
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  font-weight: bold;
+  position: relative;
+  color: #0B055B; }
+  .h3titulo::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background: #0B055B; }
+
 .fixeb-top {
   position: fixed;
   width: 100%;
@@ -72,75 +98,21 @@ nav ul a:hover {
   color: #ecf0f1;
   font-weight: bold; }
 
-.fixeb-top {
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  background-color: rgba(153, 154, 155, 0.2); }
+.container {
+  width: none; }
 
-.table-of-contents a {
-  display: inline;
-  font-weight: 500;
-  color: #fff;
-  padding-left: 16px;
-  line-height: 1.5rem;
-  letter-spacing: .4;
-  font-family: "Raleway", sans-serif;
-  border-bottom: 2px solid transparent;
-  padding: 10px;
-  -webkit-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  transition: all .5s ease-in;
-  text-transform: capitalize; }
+.texto-conoceme h3 {
+  color: #3498db;
+  font-size: 1.5625em;
+  font-family: "Raleway", sans-serif; }
 
-.table-of-contents a:hover {
-  color: #f1c40f;
-  padding-left: 15px;
-  border-left: none;
-  border-bottom: 2px solid #f1c40f;
-  padding: 10px;
-  display: inline; }
-
-nav ul a:hover {
-  background: none; }
-
-.next, .prev {
-  color: #fff;
-  position: absolute;
-  top: 45%;
-  z-index: 100;
-  cursor: pointer;
-  opacity: .5; }
-  .next.next, .prev.next {
-    left: 0; }
-  .next.prev, .prev.prev {
-    right: 0; }
-
-.table-of-contents a.active {
-  color: white;
-  border-bottom: 2px solid white; }
-
-.slider .slides {
-  height: 100%; }
-
-.slider1 h3, .slider2 h3, .slider3 h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 3.125em;
-  text-transform: capitalize; }
-
-.slider1 p, .slider2 p, .slider3 p {
+.texto-conoceme p.texto {
   font-size: 1.125em;
-  color: #fff; }
+  color: #2d3436; }
 
-.slider1 h3 span {
-  color: #f1c40f;
-  font-weight: bold; }
+.section {
+  padding-top: 60px;
+  padding-bottom: 40px; }
 
-.slider2 h3 span {
-  color: #c0392b;
-  font-weight: bold; }
-
-.slider3 h3 span {
-  color: #ecf0f1;
-  font-weight: bold; }
+.slick-slide {
+  padding: 50px 20px; }
