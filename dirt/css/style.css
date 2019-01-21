@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700");
 .titulo-borde {
   display: inline-block;
@@ -24,6 +25,19 @@
     bottom: -10px;
     left: 0;
     background: #0B055B; }
+
+p.texto {
+  font-size: 1.125em;
+  color: #2d3436; }
+
+.titulos-2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0.3125em 0; }
+
+@media (min-width: 993px) {
+  body .container {
+    width: 80% !important; } }
 
 .fixeb-top {
   position: fixed;
@@ -106,13 +120,98 @@ nav ul a:hover {
   font-size: 1.5625em;
   font-family: "Raleway", sans-serif; }
 
-.texto-conoceme p.texto {
-  font-size: 1.125em;
-  color: #2d3436; }
-
 .section {
   padding-top: 60px;
   padding-bottom: 40px; }
 
-.slick-slide {
-  padding: 50px 20px; }
+@media (min-width: 650px) {
+  .slick-slide {
+    padding: 20px 25px; } }
+
+@media (max-width: 599px) {
+  .slick-slide {
+    padding: 20px 20px; } }
+
+@media (max-width: 640px) {
+  .slick-slide {
+    padding: 20px 50px; } }
+
+@media (max-width: 450px) {
+  .slick-slide {
+    padding: 20px 20px; } }
+
+.content-1 {
+  height: 100%;
+  padding-top: 80px; }
+  @media (max-width: 600px) {
+    .content-1 {
+      padding-top: 10px; } }
+
+.servicios {
+  background: #ecf0f1; }
+
+.card-imagen {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 0; }
+
+.servicios .card-title {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.5625em !important; }
+
+.servicios .card {
+  min-height: 300px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+  .servicios .card:hover {
+    border-bottom: solid 5px #2264d5;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  .servicios .card:hover span {
+    color: #2264d5;
+    font-weight: 500 !important; }
+
+.freelance {
+  min-height: 200px;
+  background: url("../imagenes/bg-freelance.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px; }
+  .freelance .alinear h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 2.5em; }
+  .freelance .alinear p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.75em;
+    color: #fff;
+    font-weight: 200;
+    line-height: 34px;
+    opacity: .8;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .freelance .alinear p::before {
+      content: '❝'; }
+    .freelance .alinear p::after {
+      content: '❞'; }
+    .freelance .alinear p::after, .freelance .alinear p::before {
+      font-size: 1.5625em;
+      margin: 0 5px; }

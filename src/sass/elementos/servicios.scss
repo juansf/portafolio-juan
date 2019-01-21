@@ -1,0 +1,83 @@
+// backgroun contenedor servicios
+.servicios{
+    background: $opaco;
+}
+
+
+// imagen card servicios///
+.card-imagen{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left:0;
+    padding-right: 0; 
+
+}
+
+// card edicion y hover
+.servicios{
+    .card-title{
+        font-family: $titulo !important;
+        font-weight: 400 !important;
+        font-size: em(25px) !important;
+    }
+    .card{
+        min-height: 300px;
+        transition: all .3s ease-out;
+        &:hover{
+
+            border-bottom: solid 5px $azul-medio;
+            transform: translateY(-10px);
+        }
+        &:hover span{
+            color: $azul-medio;
+            font-weight: 500 !important;
+        }
+    }
+
+}
+
+
+// servicios freelance
+.freelance{
+    min-height: 200px;
+    background: url('../imagenes/bg-freelance.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    .alinear{
+       
+        h3{
+            font-family: $titulo;
+            font-weight: 500;
+            color: $blanco;
+            font-size: em(40px);
+        }
+        p{
+            font-family: $texto;
+            font-size: em(28px);
+            color: $blanco;
+            font-weight: 200;
+            line-height: 34px;
+            opacity: .8;
+            margin-top:0; 
+            margin-bottom: 0;
+            &::before{
+                content: '❝';
+            }
+            &::after{
+                content: '❞';
+            }
+
+            &::after,&::before{
+                font-size: em(25px);
+                margin: 0 5px;
+            }
+        }
+    }
+    
+}

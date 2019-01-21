@@ -1,17 +1,20 @@
-section.section#section
+div(class="divider")
+section.section#conoceme
     .container
         .row
+            //- contenido foto y slider de herramientas sobre my
             .col.m4.s12
-                .contenedor-foto
-                    img(src="imagenes/foto.png " class="responsive-img", alt="foto perfil personal")
-                .Herramientas
-                h5.center-align Herramientas
-                    div(class="carousel-herramientas")
-                        each slider in [1,2,3,4,5,6,7,8] 
-                            img(src=`imagenes/slider/slider${slider}.png`, alt="", srcset="")
-                        
+                .content-1
+                    .contenedor-foto
+                        img(src="imagenes/foto.png " class="responsive-img", alt="foto perfil personal")
+                    .Herramientas
+                    h5.center-align Herramientas
+                        div(class="carousel-herramientas")
+                            each slider in [1,2,3,4,5,6,7,8] 
+                                img(src=`imagenes/slider/slider${slider}.png`, alt="", srcset="")
                             
-                        
+                            
+            //-  contenido informacion secion sobre my           
             .col.m8.s12
                 .contenido-conoceme
                     .titulares

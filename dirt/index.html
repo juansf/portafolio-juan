@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <link href="css/slick.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header" id="inicio">
       <div>
         <nav class="fixeb-top">
           <div class="container">
@@ -41,33 +42,33 @@
             <li><img src="imagenes/slider-1.jpeg"/>
               <div class="caption left-align container">
                 <div class="row">
-                  <div class="col m8 s12 slider1">
+                  <div class="col m7 s12 slider1">
                     <h3>diseño <span>grafico</span></h3>
-                    <p>Atraiga la atención de sus clientes con diseños realizados por un profesional con experiencia.</p><a class="waves-effect waves-light  btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                    <p>Atraiga la atención de sus clientes con diseños realizados por un profesional con experiencia.</p><a class="waves-effect waves-light  btn" href="Hv.pdf" target="_blank">Resumen<i class="material-icons right">get_app</i></a>
                   </div>
-                  <div class="col s4 hide-on-small-only">   </div>
+                  <div class="col s5 hide-on-small-only">   </div>
                 </div>
               </div>
             </li>
             <li><img src="imagenes/slider-2.jpeg"/>
               <div class="caption left-align container">
                 <div class="row">
-                  <div class="col m8 s12 slider2">
+                  <div class="col m7 s12 slider2">
                     <h3>Publicidad <span>Redes Sociales</span></h3>
-                    <p>Dale un impulso a tu próxima campaña en redes sociales añadiendo mensajes y imágenes con llamativos diseños.</p><a class="waves-effect waves-light btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                    <p>Dale un impulso a tu próxima campaña en redes sociales añadiendo mensajes y imágenes con llamativos diseños.</p><a class="waves-effect waves-light btn" href="Hv.pdf" target="_blank">Resumen<i class="material-icons right">get_app</i></a>
                   </div>
-                  <div class="col s4 hide-on-small-only"> </div>
+                  <div class="col s5 hide-on-small-only"> </div>
                 </div>
               </div>
             </li>
             <li><img src="imagenes/slider-3.jpeg"/>
               <div class="caption left-align container">
                 <div class="row">
-                  <div class="col m8 s12 slider3">
+                  <div class="col m7 s12 slider3">
                     <h3>diseño <span>Web</span></h3>
-                    <p>Crearé tu web para que posicione bien en Google gracias a un desarrollo muy optimizado y un diseño simple e intuitivo.</p><a class="waves-effect waves-light btn" href="Hv.pdf">Resumen<i class="material-icons right">get_app</i></a>
+                    <p>Crearé tu web para que posicione bien en Google gracias a un desarrollo muy optimizado y un diseño simple e intuitivo.</p><a class="waves-effect waves-light btn" href="Hv.pdf" target="_blank">Resumen<i class="material-icons right">get_app</i></a>
                   </div>
-                  <div class="col s4 hide-on-small-only"> </div>
+                  <div class="col s5 hide-on-small-only"> </div>
                 </div>
               </div>
             </li>
@@ -77,16 +78,19 @@
         </div>
       </div>
     </header>
-    <section class="section" id="section">
+    <div class="divider"></div>
+    <section class="section" id="conoceme">
       <div class="container">
         <div class="row">
           <div class="col m4 s12">
-            <div class="contenedor-foto"><img class="responsive-img" src="imagenes/foto.png " alt="foto perfil personal"/></div>
-            <div class="Herramientas"></div>
-            <h5 class="center-align">Herramientas
-              <div class="carousel-herramientas"><img src="imagenes/slider/slider1.png" alt="" srcset=""/><img src="imagenes/slider/slider2.png" alt="" srcset=""/><img src="imagenes/slider/slider3.png" alt="" srcset=""/><img src="imagenes/slider/slider4.png" alt="" srcset=""/><img src="imagenes/slider/slider5.png" alt="" srcset=""/><img src="imagenes/slider/slider6.png" alt="" srcset=""/><img src="imagenes/slider/slider7.png" alt="" srcset=""/><img src="imagenes/slider/slider8.png" alt="" srcset=""/>
-              </div>
-            </h5>
+            <div class="content-1">
+              <div class="contenedor-foto"><img class="responsive-img" src="imagenes/foto.png " alt="foto perfil personal"/></div>
+              <div class="Herramientas"></div>
+              <h5 class="center-align">Herramientas
+                <div class="carousel-herramientas"><img src="imagenes/slider/slider1.png" alt="" srcset=""/><img src="imagenes/slider/slider2.png" alt="" srcset=""/><img src="imagenes/slider/slider3.png" alt="" srcset=""/><img src="imagenes/slider/slider4.png" alt="" srcset=""/><img src="imagenes/slider/slider5.png" alt="" srcset=""/><img src="imagenes/slider/slider6.png" alt="" srcset=""/><img src="imagenes/slider/slider7.png" alt="" srcset=""/><img src="imagenes/slider/slider8.png" alt="" srcset=""/>
+                </div>
+              </h5>
+            </div>
           </div>
           <div class="col m8 s12">
             <div class="contenido-conoceme">
@@ -113,9 +117,78 @@
         </div>
       </div>
     </section>
+    <div class="divider"></div>
+    <section class="servicios" id="servicios">
+      <div class="container center-align">
+        <div class="row">
+          <div class="col s12">
+            <div class="titulares">
+              <h4 class="titulo-borde">Servicios</h4>
+              <h3 class="titulos-2">My Servicios</h3>
+            </div>
+            <p class="texto">Mis servicios están enfocados en el Diseño y desarrollo de Branding,Corporativo, Marcas y Diseño y maquetacion web. Siempre estoy dispuesto a aceptar nuevos retos, me gusta experimentar con técnicas análogas y digitales. Imagino mundos y le doy forma a lo intangible a través del pixel.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l3 m6 s12">
+            <div class="card">
+              <div class="card-imagen"><img src="imagenes/icon1.svg" alt="" srcset=""/></div><span class="card-title">Diseño Grafico</span>
+              <div class="card-content">
+                <p>diseño de folletos, catálogos, Brochures . Tarjeteria, Pendones Gran formato etc... </p>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="card">
+              <div class="card-imagen"><img src="imagenes/icon2.svg" alt="" srcset=""/></div><span class="card-title">Diseño Web</span>
+              <div class="card-content">
+                <p>Branding, menbrete , Tarjetas , Logotipos, Papeleria Empresarial etc...  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="card">
+              <div class="card-imagen"><img src="imagenes/icon3.svg" alt="" srcset=""/></div><span class="card-title">Corporativo</span>
+              <div class="card-content">
+                <p>Banner Web, Paginas Web, Diseños Interfaz Reponsive etc... </p>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="card">
+              <div class="card-imagen"><img src="imagenes/icon4.svg" alt="" srcset=""/></div><span class="card-title">Redes Sociales</span>
+              <div class="card-content">
+                <p>Perfiles Sociales personalizado Imágenes llamativas para campañas Web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="freelance" id="freelance">
+      <div class="servicio-freelance ">
+        <div class="alinear center-align"> 
+          <div class="contenido-texto">
+            <h3 class="titulo-frase">Estoy disponible para trabajar como Freelancer !</h3>
+            <p class="frase">La única manera de hacer bien tu trabajo es amando lo que haces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <section class="trabajos section" id="trabajos">
+      <div class="container center-align">
+        <h4 class="titulo-borde">Trabajos</h4>
+        <h3 class="titulos-2">My Trabajos</h3>
+        <p class="texto">Conoce algunos de mis proyectos mas importantes</p>
+      </div>
+      <div class="container-fluid"><a class="fancybox" href="imagenes/gallery/diseno-1.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/diseno-1.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/diseno-2.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/diseno-2.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/diseno-3.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/diseno-3.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/branding-1.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/branding-1.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/branding-2.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/branding-2.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/branding-3.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/branding-3.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/web-1.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/web-1.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/web-2.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/web-2.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/web-3.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/web-3.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/corporativo-1.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/corporativo-1.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/corporativo-2.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/corporativo-2.jpg" alt=""/></a><a class="fancybox" href="imagenes/gallery/corporativo-3.jpg" data-fancybox="gallery" data-caption="Caption #1"><img src="imagenes/gallery/corporativo-3.jpg" alt=""/></a>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

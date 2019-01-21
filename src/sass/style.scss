@@ -12,6 +12,7 @@ $gris-oscuro:#2d3436;
 $opaco:#ecf0f1;
 $azul-icon: #3498db;
 $azul-oscuro: #0B055B;
+$azul-medio: #2264d5;
 
 
 // fuentes del la pagina web
@@ -49,7 +50,32 @@ $texto: 'Open Sans', sans-serif;
             left: 0;
             background: $azul-oscuro;}
 }
+// texto parrafo conteniso
+p.texto {
+    font-size: em(18px);
+    color: $gris-oscuro;
+}
+
+// titulos servicios y mas
+.titulos-2{
+    font-family: $titulo;
+    font-weight: 400;
+    margin: em(5px) 0;
+    
+}
+
+
+
+// adatacion tamaño de .container ancho width
+body{
+    @media (min-width:993px){
+        .container{
+            width: 80% !important;
+        }
+    }
+}
 
 // elementos css cada elementos
 @import "elementos/header.scss";
-@import "elementos/conoceme.scss"
+@import "elementos/conoceme.scss";
+@import "elementos/servicios.scss"

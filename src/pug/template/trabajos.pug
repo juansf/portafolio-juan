@@ -1,0 +1,21 @@
+div(class="divider")
+section.trabajos#trabajos.section
+    .container.center-align
+        h4.titulo-borde Trabajos
+        h3.titulos-2 My Trabajos
+        p.texto Conoce algunos de mis proyectos mas importantes
+    .container-fluid
+        -for(var i = 1; i <= 3; i++ ) 
+            a(href=`imagenes/gallery/diseno-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
+                img(src=`imagenes/gallery/diseno-${i}.jpg`, alt="")
+        -for(var i = 1; i <= 3; i++ ) 
+            a(href=`imagenes/gallery/branding-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
+                img(src=`imagenes/gallery/branding-${i}.jpg`, alt="")
+               
+        -for(var i = 1; i <= 3; i++ ) 
+            a(href=`imagenes/gallery/web-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
+                img(src=`imagenes/gallery/web-${i}.jpg`, alt="")
+       
+        -for(var i = 1; i <= 3; i++ ) 
+            a(href=`imagenes/gallery/corporativo-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
+                img(src=`imagenes/gallery/corporativo-${i}.jpg`, alt="")

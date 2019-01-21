@@ -10,10 +10,7 @@
         font-size: em(25px);
         font-family: $titulo;
     }
-    p.texto {
-        font-size: em(18px);
-        color: $gris-oscuro;
-    }
+    
 }
 .section{
     padding-top: 60px;
@@ -22,5 +19,30 @@
 
 
 .slick-slide{
-    padding: 50px 20px;
+    @media (min-width:650px ){
+        padding: 20px 25px;
+        
+    }
+    @media (max-width:599px){
+        padding: 20px 20px;
+        
+    }
+    @media (max-width:640px ){
+        padding: 20px 50px;
+        
+    }
+    @media (max-width:450px ){
+        padding: 20px 20px;
+        
+    }
+    
+}
+  
+// padin superior area foto conoceme
+.content-1{
+    height: 100%;
+    padding-top: 80px;
+    @media (max-width:600px ) {
+        padding-top: 10px;        
+    }
 }
