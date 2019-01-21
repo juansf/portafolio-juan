@@ -5,25 +5,18 @@ section.trabajos#trabajos.section
         h3.titulos-2 My Trabajos
         p.texto Conoce algunos de mis proyectos mas importantes
     .container-fluid
-        .conten-menu-gallery
+        .conten-menu-gallery.center-align.section
             .category-list
-                a(href="#" id="categoria-item" data-category="all") Todo 
-                a(href="#" id="categoria-item" data-category="Corporativo") Corporativo
-                a(href="#" id="categoria-item" data-category="Diseño") Diseño
-                a(href="#" id="categoria-item" data-category="Web") Web   
-
-        .content-imagen
-            -for(var i = 1; i <= 3; i++ ) 
-                a(href=`imagenes/gallery/diseno-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
-                    img(src=`imagenes/gallery/diseno-${i}.jpg`, alt="")
-            -for(var i = 1; i <= 3; i++ ) 
-                a(href=`imagenes/gallery/branding-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
-                    img(src=`imagenes/gallery/branding-${i}.jpg`, alt="")
-                
-            -for(var i = 1; i <= 3; i++ ) 
-                a(href=`imagenes/gallery/web-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
-                    img(src=`imagenes/gallery/web-${i}.jpg`, alt="")
+                a( class="categoria-item all active-gallery"  data-category="all") Todo 
+                a( class="categoria-item corporativo" data-category="corporativo") Corporativo
+                a( class="categoria-item diseno" data-category="diseno") Diseño
+                a( class="categoria-item web" data-category="web") Web   
         
-            -for(var i = 1; i <= 3; i++ ) 
-                a(href=`imagenes/gallery/corporativo-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
-                    img(src=`imagenes/gallery/corporativo-${i}.jpg`, alt="")
+        .content-imagen
+            -for(let i = 1; i<=4; i++)
+                a(href=`imagenes/gallery/diseno-${i}.jpg` data-fancybox="gallery" data-caption="Caption #1" class="product-item z-depth-2 diseno" data-category="diseno")
+                    img(src=`imagenes/gallery/diseno-${i}.jpg`, alt="diseno")
+                a(href=`imagenes/gallery/corporativo-${i}.jpg` data-fancybox="gallery" data-caption="Caption #2" class="product-item z-depth-2 corporativo" data-category="corporativo")
+                    img(src=`imagenes/gallery/corporativo-${i}.jpg`, alt="corporativo")    
+                a(href=`imagenes/gallery/web-${i}.jpg` data-fancybox="gallery" data-caption="Caption #3" class="product-item z-depth-2 web" data-category="web")
+                    img(src=`imagenes/gallery/web-${i}.jpg`, alt="web")

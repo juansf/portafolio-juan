@@ -1,16 +1,60 @@
+// contenedor de imagenes
 .content-imagen{
         // width: 100%;
         display: flex;
         flex-wrap: wrap;
-        a{
-            display: inline-block;
-            width: 30%;
+        // justify-content: space-around;
+        a{  
+            // margin: 20px 0;
+            display: block;
+            width: 22%;
             height: auto ;
+            
+            border-image:10px; 
+            &:hover img{
+                // transform: scale(1.5);
+        
+            }
             img{
                 width: 100%;
                 object-fit: cover;
                 height: 100%;
+               
             }
            
         }
+}
+
+// espaciado del titulo con el menu
+.conten-menu-gallery{
+    padding-top: 0 !important;
+}
+
+
+// hover imagen galleria
+
+// css menu para galleriia trabajos
+.category-list{
+    font-family: $titulo;
+    font-size: em(20px);
+    
+    a{
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        margin:0 20px;
+        font-weight: 500;
+        background: $opaco;
+        padding: 5px 20px; 
+        border-radius: 18px; 
+        transition: all .5s ease-out;
+        &:hover{
+            // background: $azul-icon;
+            // color: #fff;
+        }
+        &.active-gallery{
+            background: $azul-icon;
+            color: rgb(255, 255, 255);
+        }
+    }
 }
