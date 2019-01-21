@@ -5,17 +5,25 @@ section.trabajos#trabajos.section
         h3.titulos-2 My Trabajos
         p.texto Conoce algunos de mis proyectos mas importantes
     .container-fluid
-        -for(var i = 1; i <= 3; i++ ) 
-            a(href=`imagenes/gallery/diseno-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
-                img(src=`imagenes/gallery/diseno-${i}.jpg`, alt="")
-        -for(var i = 1; i <= 3; i++ ) 
-            a(href=`imagenes/gallery/branding-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
-                img(src=`imagenes/gallery/branding-${i}.jpg`, alt="")
-               
-        -for(var i = 1; i <= 3; i++ ) 
-            a(href=`imagenes/gallery/web-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
-                img(src=`imagenes/gallery/web-${i}.jpg`, alt="")
-       
-        -for(var i = 1; i <= 3; i++ ) 
-            a(href=`imagenes/gallery/corporativo-${i}.jpg` class="fancybox" data-fancybox="gallery" data-caption="Caption #1")
-                img(src=`imagenes/gallery/corporativo-${i}.jpg`, alt="")
+        .conten-menu-gallery
+            .category-list
+                a(href="#" id="categoria-item" data-category="all") Todo 
+                a(href="#" id="categoria-item" data-category="Corporativo") Corporativo
+                a(href="#" id="categoria-item" data-category="Diseño") Diseño
+                a(href="#" id="categoria-item" data-category="Web") Web   
+
+        .content-imagen
+            -for(var i = 1; i <= 3; i++ ) 
+                a(href=`imagenes/gallery/diseno-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
+                    img(src=`imagenes/gallery/diseno-${i}.jpg`, alt="")
+            -for(var i = 1; i <= 3; i++ ) 
+                a(href=`imagenes/gallery/branding-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
+                    img(src=`imagenes/gallery/branding-${i}.jpg`, alt="")
+                
+            -for(var i = 1; i <= 3; i++ ) 
+                a(href=`imagenes/gallery/web-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
+                    img(src=`imagenes/gallery/web-${i}.jpg`, alt="")
+        
+            -for(var i = 1; i <= 3; i++ ) 
+                a(href=`imagenes/gallery/corporativo-${i}.jpg` class="fancybo" data-fancybox="gallery" data-caption="Caption #1")
+                    img(src=`imagenes/gallery/corporativo-${i}.jpg`, alt="")
