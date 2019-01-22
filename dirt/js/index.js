@@ -44,57 +44,23 @@ $(document).ready(function(){
 
 // fancy box galleria
 
+lightbox.option({
+  'resizeDuration': 800,
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true
+})
+
+// filtro de imagenes 
 $(document).ready(function(){
-  $('.fancybox').fancybox({
-    keyboard:true
-  })
+  var filterizd = $('.filtr-container').filterizr({});
+
+})
+
+// boton activacion menu
+$('.categoria-item').on('click',function(){
+  $(this).addClass('active-gallery').siblings().removeClass('active-gallery')
 })
 
 
 
-// efectos para menu galleria//
-
-var tl = new TimelineLite()
-
-$(document).ready(function(){
-  $('.categoria-list').on('click',function(){
-    
-    // selecionador categoria del boton
-    var botones = $(this).attr('category');
-    console.log(botones);
-
-    // ocultar elementos de la categoria
-      
-      tl.to($('.product-item'),.5,{
-        scale: 0,
-        // display: 'none'
-      })
-
-    // motrar elementos del boton galleria
-    //   $('.product-item').show();
-
-    tl.to($('.product-item[category="'+botones+'" ]'),.5,{
-      scale:1,
-      // display:'block'
-    })
-    
-
-
-  });
-
-  $('.categoria-list[category="all"]').on('click',function(){
-      tl.to($('.product-item'),.5,{
-          scale:1,
-          // display:'block'
-      })
-    
-  })
-  
-
-  // boton active boton
-  
-})
-
-// $('.categoria-item').on('click',function(){
-//   $(this).addClass('active-gallery').siblings().removeClass('active-gallery')
-// })
+// open box

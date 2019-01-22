@@ -7,30 +7,49 @@ section.trabajos#trabajos.section
     .container-fluid
         .conten-menu-gallery.center-align.section
             .category-list
-                a( class="categoria-list all active-gallery"  category="all") Todo 
-                a( class="categoria-list corporativo" category="corporativo") Corporativo
-                a( class="categoria-list diseno" category="diseno") Diseño
-                a( class="categoria-list web" category="web") Web   
+                a( class="categoria-list categoria-item active-gallery" data-filter="all" category="all") Todo 
+                a( class="categoria-list categoria-item" data-filter="1" category="corporativo") Corporativo
+                a( class="categoria-list categoria-item" data-filter="2" category="diseno") Diseño
+                a( class="categoria-list categoria-item" data-filter="3" category="web") Web   
         
-        .product-list
+        .product-list.filtr-container
+            a(class=" filtr-item product-item" data-lightbox="image-1" href="imagenes/gallery/corporativo-1.jpg" data-fancybox="gallery" data-category="1")
+                img(src="imagenes/gallery/corporativo-1.jpg",  alt="")
              
-            div(class="product-item" category="corporativo")
-                img(src="imagenes/gallery/corporativo-1.jpg", alt="") 
-            div(class="product-item" category="diseno")
-                img(src="imagenes/gallery/diseno-1.jpg", alt="")     
-            div(class="product-item" category="web")
-                img(src="imagenes/gallery/web-1.jpg", alt="") 
+            a(class=" filtr-item product-item " data-lightbox="image-2" href="imagenes/gallery/diseno-1.jpg" data-fancybox="gallery" data-category="2")
+                img(src="imagenes/gallery/diseno-1.jpg",  alt="")
             
-            div(class="product-item" category="corporativo")
-                img(src="imagenes/gallery/corporativo-2.jpg", alt="") 
-            div(class="product-item" category="diseno")
-                img(src="imagenes/gallery/diseno-2.jpg", alt="")     
-            div(class="product-item" category="web")
+            a(class=" filtr-item product-item " data-lightbox="image-3" href="imagenes/gallery/grande/web-1.jpg" data-fancybox="gallery" data-category="3")
+                img(src="imagenes/gallery/web-1.jpg",  alt="")
+
+
+            a(class=" filtr-item product-item " href="imagenes/gallery/grande/corporativo-2big.jpg" data-lightbox="image-4" data-category="1")
+                img(src="imagenes/gallery/corporativo-2.jpg", alt="")
+             
+            a(class=" filtr-item product-item" href="imagenes/gallery/grande/diseno-2.jpg" data-lightbox="image-5" data-category="2")
+                img(src="imagenes/gallery/diseno-2.jpg", alt="")
+            
+            a(class=" filtr-item product-item" href="imagenes/gallery/web-2.jpg" data-lightbox="image-6" data-category="3")
                 img(src="imagenes/gallery/web-2.jpg", alt="")
 
-            div(class="product-item" category="corporativo")
-                img(src="imagenes/gallery/corporativo-3.jpg", alt="") 
-            div(class="product-item" category="diseno")
-                img(src="imagenes/gallery/diseno-3.jpg", alt="")     
-            div(class="product-item" category="web")
-                img(src="imagenes/gallery/web-3.jpg", alt="")               
+            
+            a(class=" filtr-item product-item" href="imagenes/gallery/grande/corporativo-3.jpg" data-category="1" data-lightbox="image-7")
+                img(src="imagenes/gallery/corporativo-3.jpg", alt="")
+             
+            a(class=" filtr-item product-item" href="imagenes/gallery/diseno-3.jpg" data-category="2" data-lightbox="image-8")
+                img(src="imagenes/gallery/diseno-3.jpg", alt="")
+            
+            a(class=" filtr-item product-item" href="imagenes/gallery/web-3.jpg" data-category="3" data-lightbox="image-9")
+                img(src="imagenes/gallery/web-3.jpg", alt="")
+
+
+
+            a(class=" filtr-item product-item" href="imagenes/gallery/corporativo-4.jpg" data-category="1" data-lightbox="image-10")
+                img(src="imagenes/gallery/corporativo-4.jpg", alt="")
+             
+            a(class=" filtr-item product-item" href="imagenes/gallery/diseno-4.jpg" data-category="2" data-lightbox="image-11")
+                img(src="imagenes/gallery/diseno-4.jpg", alt="")
+            
+            a(class=" filtr-item product-item" href="imagenes/gallery/web-4.jpg" data-category="3" data-lightbox="image-12")
+                img(src="imagenes/gallery/web-4.jpg", alt="")    
+            

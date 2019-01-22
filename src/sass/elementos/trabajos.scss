@@ -7,18 +7,32 @@
 
 // configuration del imagenes galeria
 .product-list{
-    margin: auto;
-    width: 95%;
+    
+    width: 100%;
     display: flex;
+   
     flex-wrap: wrap;
-    .product-item{
-        width: 22%;
-        margin-left: 3%;
-        margin-bottom: 1.2em;
+    
+ 
+    .filtr-item{
+        width: 25% !important;
+        
+        // margin-left: 3%;
+        // margin-bottom: 1.2em !important;
+        position: relative;
+        overflow: hidden;
+        
+        &:hover img{
+           transform: scale(1.2);
+           transition: all 1s ease;
+           filter: grayscale(0);
+        }
         img{
+            filter: grayscale(.5);
             width:100%;
             height: 100%;
-            object-fit: cover;
+            
+            
         }
     }
 
