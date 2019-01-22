@@ -1,33 +1,27 @@
-// contenedor de imagenes
-.content-imagen{
-        // width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        // justify-content: space-around;
-        a{  
-            // margin: 20px 0;
-            display: block;
-            width: 22%;
-            height: auto ;
-            
-            border-image:10px; 
-            &:hover img{
-                // transform: scale(1.5);
-        
-            }
-            img{
-                width: 100%;
-                object-fit: cover;
-                height: 100%;
-               
-            }
-           
-        }
-}
 
 // espaciado del titulo con el menu
 .conten-menu-gallery{
     padding-top: 0 !important;
+}
+
+
+// configuration del imagenes galeria
+.product-list{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    .product-item{
+        width: 22%;
+        margin-left: 3%;
+        margin-bottom: 1.2em;
+        img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
 }
 
 

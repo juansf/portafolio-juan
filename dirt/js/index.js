@@ -53,27 +53,48 @@ $(document).ready(function(){
 
 
 // efectos para menu galleria//
+
+var tl = new TimelineLite()
+
 $(document).ready(function(){
-  $('.categoria-item').on('click',function(){
-  //  filtro de imagenes
-    let filtro = $(this).attr('data-category');
-    if(filtro == 'all'){
-      $('.product-item').show(500)
+  $('.categoria-list').on('click',function(){
     
-    }else{
-      // ocultando producto********
-      function ocultar(){
-        $('.product-item').not("."+filtro).fadeOut(1000);
+    // selecionador categoria del boton
+    var botones = $(this).attr('category');
+    console.log(botones);
+
+    // ocultar elementos de la categoria
       
-      } 
+      tl.to($('.product-item'),.5,{
+        scale: 0,
+        // display: 'none'
+      })
 
-      // motrar imagenes************
-      $('.product-item').filter("."+filtro).fadeIn(1000);
-    }
-     
-  })
+    // motrar elementos del boton galleria
+    //   $('.product-item').show();
 
-  $('.categoria-item').on('click',function(){
-    $(this).addClass('active-gallery').siblings().removeClass('active-gallery')
+    tl.to($('.product-item[category="'+botones+'" ]'),.5,{
+      scale:1,
+      // display:'block'
+    })
+    
+
+
+  });
+
+  $('.categoria-list[category="all"]').on('click',function(){
+      tl.to($('.product-item'),.5,{
+          scale:1,
+          // display:'block'
+      })
+    
   })
+  
+
+  // boton active boton
+  
 })
+
+// $('.categoria-item').on('click',function(){
+//   $(this).addClass('active-gallery').siblings().removeClass('active-gallery')
+// })
