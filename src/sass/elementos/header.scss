@@ -44,8 +44,12 @@ nav ul a:hover {
     background: none;
 }
 
-
+// slider modificacion tamaño
+.slider{
+    height: 100vh !important;
+}
 // botones del slider left - :right
+
 .next,.prev{
     color: #fff;
     position: absolute;
@@ -66,8 +70,13 @@ nav ul a:hover {
 //////////active del srollpy congfiguration////////////
 
 .table-of-contents a.active {
-    color:white;
-    border-bottom: 2px solid white;
+    color: $amarillo;
+    padding-left: 15px;
+    border-left: none;
+    
+    border-bottom: 2px solid $amarillo;
+    padding: 10px ;
+    display: inline;
 
 }
 

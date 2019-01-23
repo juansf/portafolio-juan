@@ -14,7 +14,7 @@
   <body>
     <header class="header" id="inicio">
       <div>
-        <nav class="fixeb-top">
+        <nav class="fixeb-top scrollspy">
           <div class="container">
             <div class="nav-wrapper"><a class="brand-logo" href="#!">
                 <div class="contenedor-logo"> <img src="imagenes/logotipo.svg" alt="" srcset=""/></div></a><a class="sidenav-trigger right" href="#" data-target="mobile-demo"><i class="material-icons">menu</i></a>
@@ -28,7 +28,7 @@
             </div>
           </div>
         </nav>
-        <ul class="sidenav " ul="ul" id="mobile-demo">
+        <ul class="sidenav table-of-contents" ul="ul" id="mobile-demo">
           <li><a href="#inicio" title="title">inicio</a></li>
           <li><a href="#conoceme" title="title">conoceme</a></li>
           <li><a href="#servicios" title="title">servicios</a></li>
@@ -79,7 +79,7 @@
       </div>
     </header>
     <div class="divider"></div>
-    <section class="section" id="conoceme">
+    <section class="section scrollspy" id="conoceme">
       <div class="container">
         <div class="row">
           <div class="col m4 s12">
@@ -118,7 +118,7 @@
       </div>
     </section>
     <div class="divider"></div>
-    <section class="servicios" id="servicios">
+    <section class="servicios scrollspy" id="servicios">
       <div class="container center-align">
         <div class="row">
           <div class="col s12">
@@ -176,7 +176,7 @@
       </div>
     </div>
     <div class="divider"></div>
-    <section class="trabajos section" id="trabajos">
+    <section class="trabajos section scrollspy" id="trabajos">
       <div class="container center-align">
         <h4 class="titulo-borde">Trabajos</h4>
         <h3 class="titulos-2">My Trabajos</h3>
@@ -190,7 +190,7 @@
       </div>
     </section>
     <div class="divider"></div>
-    <section class="contacto section" id="contacto">
+    <section class="contacto section scrollspy" id="contacto">
       <div class="form_wrap container">
         <div class="row">
           <div class="col m5 s12">
@@ -210,13 +210,13 @@
               <form class="form_contact" action="enviar.php" method="post">
                 <h2 class="h3titulo">Contactame</h2>
                 <div class="user-infor">
-                  <label for="name">Nombre</label>
-                  <input type="text" id="name" name="nombre" required="required"/>
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" required="required"/>
                   <label for="email">Correo electronico</label>
                   <input type="text" id="email" name="correo" required="required"/>
                   <div class="input-field">
-                    <textarea class="materialize-textarea" id="textarea1" name="mensaje"></textarea>
-                    <label for="textarea1" required="required">Mensaje</label>
+                    <textarea class="materialize-textarea" id="textarea1" name="mensaje" required="required"></textarea>
+                    <label for="textarea1">Mensaje</label>
                   </div>
                   <input class="submit btn right" type="submit" id="btnsent" value="Enviar Mensaje"/>
                 </div>
@@ -226,6 +226,18 @@
         </div>
       </div>
     </section>
+    <footer class="section footer blue darken-1" id="footer">
+      <div class="container white-text">
+        <div class="row">
+          <div class="col s12 center-align">
+            <p>© Juan Pablo Simanca Portafolio | 2019 |  Diseñador Gráfico | freelance</p>
+          </div>
+          <div class="col s12">
+            <div class="redes-sociales"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/slick.min.js"></script>

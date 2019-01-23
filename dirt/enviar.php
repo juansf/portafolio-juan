@@ -1,23 +1,22 @@
-<?php
-    // llamandio a los campo
-    $nombre = $_post['nombre'];
+<?php  
 
-    $correo = $_post['correo'];
+// Llamando a los campos
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
 
-    $mensaje = $_post['mensaje'];
+$mensaje = $_POST['mensaje'];
 
- // datos del correo
+// Datos para el correo
+$destinatario = "juansf80@gmail.com";
+$asunto = "Contacto desde nuestra web";
 
-    $detinatario = "juansf80@gmail.com";
+$carta = "De: $nombre \n";
+$carta .= "Correo: $correo \n";
 
-    $asunto = "contacto desde la web"
+$carta .= "Mensaje: $mensaje";
 
-    $carta = "De: $nombre \n";
-    $carta .= "Correo: $correo \n";
-    $carta .= "Mensaje: $mensaje" 
+// Enviando Mensaje
+mail($destinatario, $asunto, $carta);
+header('Location:mensaje-de-envio.html');
 
-    //enviando mensaje
-
-    mail($detinatario, $asunto, $carta);
-    header("Location:envio.html")
 ?>

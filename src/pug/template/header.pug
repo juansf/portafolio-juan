@@ -1,7 +1,7 @@
 header#inicio.header
     //- menu header reponsonsive 
     div(class="")
-        nav(class="fixeb-top")
+        nav(class="fixeb-top scrollspy")
             .container
                 div(class="nav-wrapper")
                     a(href="#!" class="brand-logo")
@@ -16,7 +16,7 @@ header#inicio.header
                             
                             
         //-  sideva contenido               
-        ul(ul class="sidenav " id="mobile-demo")
+        ul(ul class="sidenav table-of-contents" id="mobile-demo")
             each navegador in menu                      
                 li
                     a(href=`#${navegador}`, title="title")= `${navegador}`

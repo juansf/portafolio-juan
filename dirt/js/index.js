@@ -10,7 +10,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy({
+
+  });
 });
     
 // slider modificaciones
@@ -18,7 +20,7 @@ $(document).ready(function(){
   $('.slider').slider({
     indicators	: false,
     duration : 300,
-    height: 500
+    height: '640'
   });
   
   $('.slider').click(function(){
@@ -69,7 +71,7 @@ $(document).ready(function(){
     var errores = "";
 
     //  confirmador contacto nombe*********** 
-    if($('#name').val() == "" ){
+    if($('#nombre').val() == "" ){
        errores += '<p> <i class="material-icons left">clear</i> Escribir Nombre</p>'
     }
     //  confirmador contacto email***********

@@ -1,5 +1,5 @@
 div(class="divider")
-section.contacto#contacto.section
+section.contacto#contacto.section.scrollspy
     .form_wrap.container
         .row
             //- datos de contacto information
@@ -29,15 +29,15 @@ section.contacto#contacto.section
                     form(action="enviar.php" method="post" class="form_contact")
                         h2.h3titulo Contactame
                         div(class="user-infor")
-                            label(for="name" ) Nombre
-                            input(type="text" id="name" name="nombre" required)
+                            label(for="nombre" ) Nombre
+                            input(type="text" id="nombre" name="nombre" required)
 
 
                             label(for="email" ) Correo electronico
-                            input(type="text" id="email" name="correo" required) 
+                            input(type="text" id="email" name="correo" required ) 
 
                             div(class="input-field")
-                                textarea(  id="textarea1"  name="mensaje" class="materialize-textarea" )
-                                label(for="textarea1" required) Mensaje
+                                textarea(id="textarea1"  name="mensaje" class="materialize-textarea" required )
+                                label(for="textarea1" ) Mensaje
 
                             input(type="submit" class="submit btn right" id="btnsent"  value="Enviar Mensaje")    
