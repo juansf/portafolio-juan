@@ -63,4 +63,40 @@ $('.categoria-item').on('click',function(){
 
 
 
-// open box
+// alerta contacto aviso
+$(document).ready(function(){
+  $('#btnsent').click(function(){
+    var errores = "";
+
+    //  confirmador contacto nombe*********** 
+    if($('#name').val() == "" ){
+       errores += '<p> <i class="material-icons left">clear</i> Escribir Nombre</p>'
+    }
+    //  confirmador contacto email***********
+    if($('#email').val() == "" ){
+      errores += '<p> <i class="material-icons left">clear</i> Ingrse Correo</p>'
+   }
+   //  confirmador contacto mensaje***********
+    if($('#textarea1').val() == "" ){
+      errores += '<p> <i class="material-icons left">clear</i>Escriba un Mensaje</p>'
+ }
+    // mensaje modal errores
+    if(errores == "" == false ){
+      var mensaje_modal = `<div class="modal-formulario">
+                              <div class="mensaje-formulario">
+                                  <h4> completar...</h4>
+                                  <div class="divider"></div>
+                                  ${errores}
+                                  <input type="button" class="btn" id="btnCloset"  value= "cerrar" />
+                              </div>
+                          </div>`
+    
+        $('body').append(mensaje_modal)
+      }
+
+      $('#btnCloset').click(function(){
+          $('.modal-formulario').remove();
+      })
+    
+  })
+})

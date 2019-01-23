@@ -13,7 +13,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.875em;
   margin-top: 0.3125em;
-  margin-bottom: 0.3125em;
+  margin-bottom: 0.625em;
   font-weight: bold;
   position: relative;
   color: #0B055B; }
@@ -264,3 +264,77 @@ nav ul a:hover {
     .category-list a.active-gallery {
       background: #3498db;
       color: white; }
+
+.info-contenedor {
+  background: url("../imagenes/bg-contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0; }
+
+.form_wrap {
+  min-height: 500px; }
+
+.ajustar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+  color: #fff; }
+  .ajustar .contact-info {
+    text-align: center; }
+    .ajustar .contact-info span {
+      font-size: 9.375em; }
+    .ajustar .contact-info h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 2.5em;
+      font-weight: 500; }
+    .ajustar .contact-info p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.875em;
+      font-weight: 800; }
+
+.form_contact .submit {
+  border-radius: 20px;
+  color: #fff !important;
+  cursor: pointer; }
+
+.modal-formulario {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .modal-formulario .mensaje-formulario {
+    min-width: 40%;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 20px; }
+    .modal-formulario .mensaje-formulario h4 {
+      font-size: 1.5625em; }
+    .modal-formulario .mensaje-formulario p {
+      font-size: 1em;
+      color: #606060; }
+      .modal-formulario .mensaje-formulario p i {
+        color: red;
+        font-size: 1.5625em; }

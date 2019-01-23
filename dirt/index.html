@@ -189,6 +189,43 @@
         <div class="product-list filtr-container"><a class=" filtr-item product-item" data-lightbox="image-1" href="imagenes/gallery/corporativo-1.jpg" data-fancybox="gallery" data-category="1"><img src="imagenes/gallery/corporativo-1.jpg" alt=""/></a><a class=" filtr-item product-item " data-lightbox="image-2" href="imagenes/gallery/diseno-1.jpg" data-fancybox="gallery" data-category="2"><img src="imagenes/gallery/diseno-1.jpg" alt=""/></a><a class=" filtr-item product-item " data-lightbox="image-3" href="imagenes/gallery/grande/web-1.jpg" data-fancybox="gallery" data-category="3"><img src="imagenes/gallery/web-1.jpg" alt=""/></a><a class=" filtr-item product-item " href="imagenes/gallery/grande/corporativo-2big.jpg" data-lightbox="image-4" data-category="1"><img src="imagenes/gallery/corporativo-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/grande/diseno-2.jpg" data-lightbox="image-5" data-category="2"><img src="imagenes/gallery/diseno-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-2.jpg" data-lightbox="image-6" data-category="3"><img src="imagenes/gallery/web-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/grande/corporativo-3.jpg" data-category="1" data-lightbox="image-7"><img src="imagenes/gallery/corporativo-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/diseno-3.jpg" data-category="2" data-lightbox="image-8"><img src="imagenes/gallery/diseno-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-3.jpg" data-category="3" data-lightbox="image-9"><img src="imagenes/gallery/web-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/corporativo-4.jpg" data-category="1" data-lightbox="image-10"><img src="imagenes/gallery/corporativo-4.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/diseno-4.jpg" data-category="2" data-lightbox="image-11"><img src="imagenes/gallery/diseno-4.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-4.jpg" data-category="3" data-lightbox="image-12"><img src="imagenes/gallery/web-4.jpg" alt=""/></a></div>
       </div>
     </section>
+    <div class="divider"></div>
+    <section class="contacto section" id="contacto">
+      <div class="form_wrap container">
+        <div class="row">
+          <div class="col m5 s12">
+            <div class="ajustar info-contenedor"> 
+              <section class="contact-info"><span class="material-icons">account_circle</span>
+                <h2>Informacion Contacto</h2>
+              </section>
+              <section class="infor-item">
+                <p> <i class="material-icons left">mail_outline</i>juansf80@gmail.com</p>
+                <p> <i class="material-icons left">phonelink_ring</i>300 434 1113 - 392 2394 </p>
+                <p> <i class="material-icons left">location_on</i>Carrera 40a No. 27 - 26   </p>
+              </section>
+            </div>
+          </div>
+          <div class="col m7 s12">
+            <div class="container">
+              <form class="form_contact" action="enviar.php" method="post">
+                <h2 class="h3titulo">Contactame</h2>
+                <div class="user-infor">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" name="nombre" required="required"/>
+                  <label for="email">Correo electronico</label>
+                  <input type="text" id="email" name="correo" required="required"/>
+                  <div class="input-field">
+                    <textarea class="materialize-textarea" id="textarea1" name="mensaje"></textarea>
+                    <label for="textarea1" required="required">Mensaje</label>
+                  </div>
+                  <input class="submit btn right" type="submit" id="btnsent" value="Enviar Mensaje"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/slick.min.js"></script>

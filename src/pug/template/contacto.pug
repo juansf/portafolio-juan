@@ -2,8 +2,42 @@ div(class="divider")
 section.contacto#contacto.section
     .form_wrap.container
         .row
-            .col.s6 
-                section(class="contact-info")
-                    span(class="")
-            .col.s6
-                form(action="" class="form_contact")
+            //- datos de contacto information
+            .col.m5.s12
+                .ajustar.info-contenedor 
+                    section(class="contact-info")
+                        span(class="material-icons") account_circle
+                        h2 Informacion Contacto
+                    section(class="infor-item")
+                        p 
+                            i(class="material-icons left") mail_outline
+                            
+                            | juansf80@gmail.com
+                        p 
+                            i(class="material-icons left") phonelink_ring
+                            
+                            | 300 434 1113 - 392 2394 
+                        
+                        p 
+                            i(class="material-icons left") location_on
+                            
+                            | Carrera 40a No. 27 - 26   
+                
+            //- formulario de contacto
+            .col.m7.s12
+                .container
+                    form(action="enviar.php" method="post" class="form_contact")
+                        h2.h3titulo Contactame
+                        div(class="user-infor")
+                            label(for="name" ) Nombre
+                            input(type="text" id="name" name="nombre" required)
+
+
+                            label(for="email" ) Correo electronico
+                            input(type="text" id="email" name="correo" required) 
+
+                            div(class="input-field")
+                                textarea(  id="textarea1"  name="mensaje" class="materialize-textarea" )
+                                label(for="textarea1" required) Mensaje
+
+                            input(type="submit" class="submit btn right" id="btnsent"  value="Enviar Mensaje")    

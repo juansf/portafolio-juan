@@ -37,7 +37,7 @@ $texto: 'Open Sans', sans-serif;
     font-family: $titulo;
         font-size: em(30px);
         margin-top: em(5px);
-        margin-bottom: em(5px);
+        margin-bottom: em(10px);
         font-weight: bold;
         position: relative;
         color:$azul-oscuro;
@@ -79,4 +79,5 @@ body{
 @import "elementos/header.scss";
 @import "elementos/conoceme.scss";
 @import "elementos/servicios.scss";
-@import "elementos/trabajos.scss"
+@import "elementos/trabajos.scss";
+@import "elementos/contacto.scss";
