@@ -8,10 +8,23 @@ $(document).ready(function(){
 //     var instances = M.Carousel.init(elemss);
 // });
 
+// cambio de color al scroloar
+$(document).ready(function(){
+  $(window).scroll(function(){
+
+    if($('.fixeb-top').offset().top > 56){
+        $('.fixeb-top').addClass('blue darken-4');
+    }
+    else{
+      $('.fixeb-top').removeClass('blue darken-4');
+    }
+  })
+});
 
 $(document).ready(function(){
   $('.scrollspy').scrollSpy({
-
+    throttle:200,
+    scrollOffset:100
   });
 });
     
@@ -43,25 +56,22 @@ $(document).ready(function(){
   })
 })
 
-
-// fancy box galleria
-
+// lightbox conf
 lightbox.option({
-  'resizeDuration': 800,
-  'wrapAround': true,
-  'alwaysShowNavOnTouchDevices': true
+  'alwaysShowNavOnTouchDevices': 'true'
 })
 
 // filtro de imagenes 
 $(document).ready(function(){
-  var filterizd = $('.filtr-container').filterizr({});
-
+  var conf = document.querySelector('.container-mix');
+  var mixer = mixitup(conf);
+  // $('.container-mix').mixitup()
 })
 
 // boton activacion menu
 $('.categoria-item').on('click',function(){
-  $(this).addClass('active-gallery').siblings().removeClass('active-gallery')
-})
+  $(this).addClass('active-gallery').siblings().removeClass('active-gallery');
+});
 
 
 
@@ -102,3 +112,30 @@ $(document).ready(function(){
     
   })
 })
+
+
+// boton de subir scroll up
+
+$(document).ready(function(){
+
+  $('.subir_arriba').hide()
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 100){
+      $('.subir_arriba').fadeIn()
+    }else{
+      $('.subir_arriba').fadeOut()
+    }
+  })
+  $('.subir_arriba').click(function(){
+    $('body,html').animate({
+      scrollTop:0
+    },1000)
+  })
+})
+
+// preloaded materialize
+  window.addEventListener('load',function(){
+    $('#contenido').removeClass('hide')
+    
+  })

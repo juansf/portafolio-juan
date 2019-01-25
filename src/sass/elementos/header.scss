@@ -9,6 +9,10 @@
 }
 //--fin position fixed--//
 
+// posicionamiento de logo  
+nav .brand-logo{
+    padding: 10px 0;
+}
 // personalizacion de contenido navbar menu principal//
 .table-of-contents a {
     display: inline;
@@ -45,8 +49,8 @@ nav ul a:hover {
 }
 
 // slider modificacion tamaño
-.slider{
-    height: 100vh !important;
+.slider .slides li .caption{
+    top:25%;
 }
 // botones del slider left - :right
 
@@ -79,8 +83,37 @@ nav ul a:hover {
     display: inline;
 
 }
+// arreglo sidenav mobil menu arreglo
+.sidenav{
+    background: url('../imagenes/bg-navbar.jpg');
+    text-transform: capitalize;
+    
+        li{
+            border-left: 5px solid $amarillo;
+            // border-bottom: .1px solid rgba(255, 255, 255, 0.637);
+            box-shadow: 0 3px 2px rgba($color: #000000, $alpha: .1);
+            a{
 
+                font-family: $titulo;
+                font-size: em(18px);
+                color: rgb(255, 255, 255);
+              
+            }
 
+        }
+        .user-view{
+            height: 100px;
+        }
+}
+.imagen-navbar{
+    display: flex;
+    justify-content: center;
+}
+    // hover sidenav menu lateral navbar
+.sidenav li > a:hover{
+    background: rgb(44, 125, 206);
+    transition: all .5s ease;
+}
 // personalizacion slider header//@at-root
 .slider .slides{
     height: 100%;

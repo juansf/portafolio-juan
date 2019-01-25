@@ -7,49 +7,91 @@ section.trabajos#trabajos.section.scrollspy
     .container-fluid
         .conten-menu-gallery.center-align.section
             .category-list
-                a( class="categoria-list categoria-item active-gallery" data-filter="all" category="all") Todo 
-                a( class="categoria-list categoria-item" data-filter="1" category="corporativo") Corporativo
-                a( class="categoria-list categoria-item" data-filter="2" category="diseno") Diseño
-                a( class="categoria-list categoria-item" data-filter="3" category="web") Web   
+               
+                    a( class="categoria-list categoria-item active-gallery"  data-filter="all" category="all") Todo 
+                
+                    a( class="categoria-list  categoria-item active" data-filter=".corporativo" category="corporativo") Corporativo
+               
+                    a( class="categoria-list  categoria-item active" data-filter=".diseno" category="diseno") Diseño
+                
+                    a( class="categoria-list  categoria-item active" data-filter=".web" category="web") Web   
         
-        .product-list.filtr-container
-            a(class=" filtr-item product-item" data-lightbox="image-1" href="imagenes/gallery/corporativo-1.jpg" data-fancybox="gallery" data-category="1")
-                img(src="imagenes/gallery/corporativo-1.jpg",  alt="")
-             
-            a(class=" filtr-item product-item " data-lightbox="image-2" href="imagenes/gallery/diseno-1.jpg" data-fancybox="gallery" data-category="2")
-                img(src="imagenes/gallery/diseno-1.jpg",  alt="")
+        .product-list.container-mix.container
+            a( href="imagenes/gallery/corporativo-1.jpg" class=" caja-overlay mix corporativo" data-lightbox="image" data-order="1") 
+                img(  src="imagenes/gallery/corporativo-1.jpg",  alt=" imagen Galeria")
+                div(class="overlay")
+                    p.subir.white-text Corporativo
+                    i(class="material-icons white-text subir") loupe
             
-            a(class=" filtr-item product-item " data-lightbox="image-3" href="imagenes/gallery/grande/web-1.jpg" data-fancybox="gallery" data-category="3")
-                img(src="imagenes/gallery/web-1.jpg",  alt="")
+            a( href="imagenes/gallery/grande/web-1.jpg" class=" caja-overlay mix web" data-lightbox="image" data-order="2") 
+                img(  src="imagenes/gallery/web-1.jpg",  alt=" imagen Galeria")
+                div(class="overlay")
+                    p.subir.white-text Redes Sociales
+                    i(class="material-icons white-text subir") loupe
+            
+            a( href="imagenes/gallery/diseno-1.jpg" class=" caja-overlay mix diseno" data-lightbox="image" data-order="3") 
+                img(  src="imagenes/gallery/diseno-1.jpg",  alt=" imagen Galeria")
+                div(class="overlay")
+                    p.subir.white-text Diseño Gráfico
+                    i(class="material-icons white-text subir") loupe
+            
+                //- parte 2 galeria
+            a( href="imagenes/gallery/grande/corporativo-2.jpg" class=" caja-overlay mix corporativo" data-lightbox="image" data-order="4")
+                img(  src="imagenes/gallery/corporativo-2.jpg",  alt="imagen galeria")
+                div(class="overlay")
+                    p.subir.white-text Diseño Gráfico
+                    i(class="material-icons white-text subir") loupe
+            
+            a( href="imagenes/gallery/web-2.jpg" class=" caja-overlay mix web" data-lightbox="image" data-order="5") 
+                img(  src="imagenes/gallery/web-2.jpg",  alt="imagen galeria")
+                div(class="overlay")
+                    p.subir.white-text Web Reponsive
+                    i(class="material-icons white-text subir") loupe
+            
+            a( href="imagenes/gallery/grande/diseno-2.jpg" class=" caja-overlay mix diseno" data-lightbox="image" data-order="6") 
+                img(  src="imagenes/gallery/diseno-2.jpg",  alt="imagen galeria")
+                div(class="overlay")
+                    p.subir.white-text Diseño Gráfico
+                    i(class="material-icons white-text subir") loupe
+
+            
+
+            //- parte 3 galeria
+            a( href="imagenes/gallery/grande/corporativo-3.jpg" class=" caja-overlay mix corporativo" data-lightbox="image" data-order="7")
+                img(  src="imagenes/gallery/corporativo-3.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text Tarjetas Presentación
+                    i(class="material-icons white-text subir") loupe
+            
+            a( href="imagenes/gallery/grande/web-3.jpg" class=" caja-overlay mix web" data-lightbox="image" data-order="8") 
+                img(  src="imagenes/gallery/web-3.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text Paginas Web
+                    i(class="material-icons white-text subir") loupe
+            
+            a( href="imagenes/gallery/diseno-3.jpg" class=" caja-overlay mix diseno" data-lightbox="image" data-order="9") 
+                img(  src="imagenes/gallery/diseno-3.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text Revistas Educativas 
+                    i(class="material-icons white-text subir") loupe
 
 
-            a(class=" filtr-item product-item " href="imagenes/gallery/grande/corporativo-2big.jpg" data-lightbox="image-4" data-category="1")
-                img(src="imagenes/gallery/corporativo-2.jpg", alt="")
-             
-            a(class=" filtr-item product-item" href="imagenes/gallery/grande/diseno-2.jpg" data-lightbox="image-5" data-category="2")
-                img(src="imagenes/gallery/diseno-2.jpg", alt="")
             
-            a(class=" filtr-item product-item" href="imagenes/gallery/web-2.jpg" data-lightbox="image-6" data-category="3")
-                img(src="imagenes/gallery/web-2.jpg", alt="")
-
+            //- parte 4 galeria
+            a( href="imagenes/gallery/corporativo-4.jpg" class=" caja-overlay mix corporativo" data-lightbox="image" data-order="10")
+                img(  src="imagenes/gallery/corporativo-4.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text Branding 
+                    i(class="material-icons white-text subir") loupe
             
-            a(class=" filtr-item product-item" href="imagenes/gallery/grande/corporativo-3.jpg" data-category="1" data-lightbox="image-7")
-                img(src="imagenes/gallery/corporativo-3.jpg", alt="")
-             
-            a(class=" filtr-item product-item" href="imagenes/gallery/diseno-3.jpg" data-category="2" data-lightbox="image-8")
-                img(src="imagenes/gallery/diseno-3.jpg", alt="")
+            a( href="imagenes/gallery/web-4.jpg" class=" caja-overlay mix web" data-lightbox="image" data-order="11") 
+                img(  src="imagenes/gallery/web-4.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text  Redes Sociales
+                    i(class="material-icons white-text subir") loupe
             
-            a(class=" filtr-item product-item" href="imagenes/gallery/web-3.jpg" data-category="3" data-lightbox="image-9")
-                img(src="imagenes/gallery/web-3.jpg", alt="")
-
-
-
-            a(class=" filtr-item product-item" href="imagenes/gallery/corporativo-4.jpg" data-category="1" data-lightbox="image-10")
-                img(src="imagenes/gallery/corporativo-4.jpg", alt="")
-             
-            a(class=" filtr-item product-item" href="imagenes/gallery/diseno-4.jpg" data-category="2" data-lightbox="image-11")
-                img(src="imagenes/gallery/diseno-4.jpg", alt="")
-            
-            a(class=" filtr-item product-item" href="imagenes/gallery/web-4.jpg" data-category="3" data-lightbox="image-12")
-                img(src="imagenes/gallery/web-4.jpg", alt="")    
-            
+            a( href="imagenes/gallery/diseno-4.jpg" class=" caja-overlay mix diseno" data-lightbox="image" data-order="12") 
+                img(  src="imagenes/gallery/diseno-4.jpg",  alt="")
+                div(class="overlay")
+                    p.subir.white-text Gran Formato
+                    i(class="material-icons white-text subir") loupe

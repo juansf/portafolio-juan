@@ -4,6 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="Author" content="juan pablo Simanca"/>
+    <meta name="Subject" content="Diseñador grafico - web, freelance / reponsive, Portafolio Diseño Grafico, "/>
+    <meta name="Description" content="estés es un portafolio de trabajo mostrando mi experiencia y practica en el diseño gráfico a mas de 5 años de experiencia "/>
+    <meta name="Keywords" content="Diseñador gráfico freelance, Diseñador Web freelance y diseñador web freelance, diseño gráfico, diseño de páginas web y desarrollo páginas web. Ubicado en soledad atlantico (Colombia). Diseño y desarrollo webs sites responsive, webs sites responsive, diseñador de: imagen corporativa, logotipos, folletos, brochures, identidad corporativa, afiches, pendones, etc. Freelance Designer Design in Colombia, portafolio web,seo"/>
     <title>Portafolio Juan Simanca</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
@@ -12,12 +16,13 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <header class="header" id="inicio">
+    <div class="subir_arriba"><i class="material-icons">keyboard_arrow_up</i></div>
+    <header class="header scrollspy" id="inicio">
       <div>
-        <nav class="fixeb-top scrollspy">
+        <nav class="fixeb-top ">
           <div class="container">
             <div class="nav-wrapper"><a class="brand-logo" href="#!">
-                <div class="contenedor-logo"> <img src="imagenes/logotipo.svg" alt="" srcset=""/></div></a><a class="sidenav-trigger right" href="#" data-target="mobile-demo"><i class="material-icons">menu</i></a>
+                <div class="contenedor-logo"> <img src="imagenes/logotipo.svg" alt="" srcset=""/></div></a><a class="sidenav-trigger right" href="#" data-target="navbar-out"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down table-of-contents">
                 <li><a href="#inicio" title="title">inicio</a></li>
                 <li><a href="#conoceme" title="title">conoceme</a></li>
@@ -28,7 +33,12 @@
             </div>
           </div>
         </nav>
-        <ul class="sidenav table-of-contents" ul="ul" id="mobile-demo">
+        <ul class="sidenav " ul="ul" id="navbar-out">
+          <div>
+            <div class="user-view">
+              <div class="imagen-navbar"><img src="imagenes/logotipo.svg" width="140px" alt="logotipo"/></div>
+            </div>
+          </div>
           <li><a href="#inicio" title="title">inicio</a></li>
           <li><a href="#conoceme" title="title">conoceme</a></li>
           <li><a href="#servicios" title="title">servicios</a></li>
@@ -184,9 +194,45 @@
       </div>
       <div class="container-fluid">
         <div class="conten-menu-gallery center-align section">
-          <div class="category-list"><a class="categoria-list categoria-item active-gallery" data-filter="all" category="all">Todo </a><a class="categoria-list categoria-item" data-filter="1" category="corporativo">Corporativo</a><a class="categoria-list categoria-item" data-filter="2" category="diseno">Diseño</a><a class="categoria-list categoria-item" data-filter="3" category="web">Web   </a></div>
+          <div class="category-list"><a class="categoria-list categoria-item active-gallery" data-filter="all" category="all">Todo </a><a class="categoria-list  categoria-item active" data-filter=".corporativo" category="corporativo">Corporativo</a><a class="categoria-list  categoria-item active" data-filter=".diseno" category="diseno">Diseño</a><a class="categoria-list  categoria-item active" data-filter=".web" category="web">Web   </a></div>
         </div>
-        <div class="product-list filtr-container"><a class=" filtr-item product-item" data-lightbox="image-1" href="imagenes/gallery/corporativo-1.jpg" data-fancybox="gallery" data-category="1"><img src="imagenes/gallery/corporativo-1.jpg" alt=""/></a><a class=" filtr-item product-item " data-lightbox="image-2" href="imagenes/gallery/diseno-1.jpg" data-fancybox="gallery" data-category="2"><img src="imagenes/gallery/diseno-1.jpg" alt=""/></a><a class=" filtr-item product-item " data-lightbox="image-3" href="imagenes/gallery/grande/web-1.jpg" data-fancybox="gallery" data-category="3"><img src="imagenes/gallery/web-1.jpg" alt=""/></a><a class=" filtr-item product-item " href="imagenes/gallery/grande/corporativo-2big.jpg" data-lightbox="image-4" data-category="1"><img src="imagenes/gallery/corporativo-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/grande/diseno-2.jpg" data-lightbox="image-5" data-category="2"><img src="imagenes/gallery/diseno-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-2.jpg" data-lightbox="image-6" data-category="3"><img src="imagenes/gallery/web-2.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/grande/corporativo-3.jpg" data-category="1" data-lightbox="image-7"><img src="imagenes/gallery/corporativo-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/diseno-3.jpg" data-category="2" data-lightbox="image-8"><img src="imagenes/gallery/diseno-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-3.jpg" data-category="3" data-lightbox="image-9"><img src="imagenes/gallery/web-3.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/corporativo-4.jpg" data-category="1" data-lightbox="image-10"><img src="imagenes/gallery/corporativo-4.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/diseno-4.jpg" data-category="2" data-lightbox="image-11"><img src="imagenes/gallery/diseno-4.jpg" alt=""/></a><a class=" filtr-item product-item" href="imagenes/gallery/web-4.jpg" data-category="3" data-lightbox="image-12"><img src="imagenes/gallery/web-4.jpg" alt=""/></a></div>
+        <div class="product-list container-mix container"><a class=" caja-overlay mix corporativo" href="imagenes/gallery/corporativo-1.jpg" data-lightbox="image" data-order="1"> <img src="imagenes/gallery/corporativo-1.jpg" alt=" imagen Galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Corporativo</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix web" href="imagenes/gallery/grande/web-1.jpg" data-lightbox="image" data-order="2"> <img src="imagenes/gallery/web-1.jpg" alt=" imagen Galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Redes Sociales</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix diseno" href="imagenes/gallery/diseno-1.jpg" data-lightbox="image" data-order="3"> <img src="imagenes/gallery/diseno-1.jpg" alt=" imagen Galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Diseño Gráfico</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix corporativo" href="imagenes/gallery/grande/corporativo-2.jpg" data-lightbox="image" data-order="4"><img src="imagenes/gallery/corporativo-2.jpg" alt="imagen galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Diseño Gráfico</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix web" href="imagenes/gallery/web-2.jpg" data-lightbox="image" data-order="5"> <img src="imagenes/gallery/web-2.jpg" alt="imagen galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Web Reponsive</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix diseno" href="imagenes/gallery/grande/diseno-2.jpg" data-lightbox="image" data-order="6"> <img src="imagenes/gallery/diseno-2.jpg" alt="imagen galeria"/>
+            <div class="overlay">
+              <p class="subir white-text">Diseño Gráfico</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix corporativo" href="imagenes/gallery/grande/corporativo-3.jpg" data-lightbox="image" data-order="7"><img src="imagenes/gallery/corporativo-3.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text">Tarjetas Presentación</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix web" href="imagenes/gallery/grande/web-3.jpg" data-lightbox="image" data-order="8"> <img src="imagenes/gallery/web-3.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text">Paginas Web</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix diseno" href="imagenes/gallery/diseno-3.jpg" data-lightbox="image" data-order="9"> <img src="imagenes/gallery/diseno-3.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text">Revistas Educativas </p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix corporativo" href="imagenes/gallery/corporativo-4.jpg" data-lightbox="image" data-order="10"><img src="imagenes/gallery/corporativo-4.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text">Branding </p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix web" href="imagenes/gallery/web-4.jpg" data-lightbox="image" data-order="11"> <img src="imagenes/gallery/web-4.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text"> Redes Sociales</p><i class="material-icons white-text subir">loupe</i>
+            </div></a><a class=" caja-overlay mix diseno" href="imagenes/gallery/diseno-4.jpg" data-lightbox="image" data-order="12"> <img src="imagenes/gallery/diseno-4.jpg" alt=""/>
+            <div class="overlay">
+              <p class="subir white-text">Gran Formato</p><i class="material-icons white-text subir">loupe</i>
+            </div></a></div>
       </div>
     </section>
     <div class="divider"></div>
@@ -242,7 +288,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/lightbox.min.js"></script>
-    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="js/index.js"></script>
   </body>

@@ -1,13 +1,13 @@
-header#inicio.header
+header#inicio.header.scrollspy
     //- menu header reponsonsive 
     div(class="")
-        nav(class="fixeb-top scrollspy")
+        nav(class="fixeb-top ")
             .container
                 div(class="nav-wrapper")
                     a(href="#!" class="brand-logo")
                         .contenedor-logo 
                             img(src="imagenes/logotipo.svg", alt="", srcset="")
-                    a(href="#" data-target="mobile-demo" class="sidenav-trigger right")
+                    a(href="#" data-target="navbar-out" class="sidenav-trigger right")
                         i(class="material-icons") menu
                     ul( class="right hide-on-med-and-down table-of-contents")
                         each navegador in menu                      
@@ -16,7 +16,15 @@ header#inicio.header
                             
                             
         //-  sideva contenido               
-        ul(ul class="sidenav table-of-contents" id="mobile-demo")
+        ul(ul class="sidenav " id="navbar-out")
+            //- cabezera del navbar menu 
+            div
+                div(class="user-view")
+                    div(class="imagen-navbar")
+                        img(src="imagenes/logotipo.svg", width="140px" alt="logotipo")
+                   
+                    
+            //- botones del navbar
             each navegador in menu                      
                 li
                     a(href=`#${navegador}`, title="title")= `${navegador}`
